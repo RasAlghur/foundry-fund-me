@@ -1,4 +1,6 @@
-## Foundry
+## A Simple FundMe contract
+
+**This is a fundme contract written in solidity and tested in forge using foundry**
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
@@ -14,6 +16,10 @@ Foundry consists of:
 https://book.getfoundry.sh/
 
 ## Usage
+- **ENV File**: convert the .env.local file to .env and paste your RPC URL into it, you could get RPC URL from Alchemy or any other provider.
+```shell
+source .env
+```
 
 ### Build
 
@@ -48,7 +54,7 @@ $ anvil
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 
 ### Cast
